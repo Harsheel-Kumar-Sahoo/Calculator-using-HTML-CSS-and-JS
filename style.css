@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+body{
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+form{
+    background-color: white;
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 3vh;
+    font-size: 5vh;
+    font-family: 'Ubuntu', sans-serif;
+    margin: auto;
+}
+input[type='button']{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    font-size: 3vh;
+    color: white;
+    border-radius: 5vh;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <form name="formcalc">
+        
+        <center><h4>Calculator</h4></center>
+        Number 1: <input type="text" placeholder="Enter Number 1" name="txtnum1"><br>
+        Number 2: <input type="text" placeholder="Enter Number 2" name="txtnum2"><br>
+        <input type="button" value="Add" onclick="sumValues()">
+        <input type="button" value="Subtract" onclick="subValues()">
+        <input type="button" value="Multiply" onclick="mulValues()">
+        <input type="button" value="Divide" onclick="divValues()"><br>
+        Result: <input type="text" name="txtres"><br>
+        
+        <center><h6>Made by<br>Harsheel Kumar Sahoo</h6</center>
+    </form>
+</body>
+<script type="text/javascript">
+    function sumValues()
+    {
+        var num1, num2, res;
+        num1=Number(document.formcalc.txtnum1.value);
+        num2=Number(document.formcalc.txtnum2.value);
+        res=num1+num2;
+        document.formcalc.txtres.value=res;
+    }
+    function subValues()
+    {
+        var num1, num2, res;
+        num1=Number(document.formcalc.txtnum1.value);
+        num2=Number(document.formcalc.txtnum2.value);
+        res=num1 - num2;
+        document.formcalc.txtres.value=res;
+    }
+    function mulValues()
+    {
+        var num1, num2, res;
+        num1=Number(document.formcalc.txtnum1.value);
+        num2=Number(document.formcalc.txtnum2.value);
+        res=num1 * num2;
+        document.formcalc.txtres.value=res;
+    }
+    function divValues()
+    {
+        var num1, num2, res;
+        num1=Number(document.formcalc.txtnum1.value);
+        num2=Number(document.formcalc.txtnum2.value);
+        res=num1 / num2;
+        document.formcalc.txtres.value=res;
+    }
+</script>
+</html>
